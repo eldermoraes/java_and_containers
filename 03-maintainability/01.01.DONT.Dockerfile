@@ -1,4 +1,4 @@
-# docker build -t jc-maintain01-dont -f 01.01.DONT.Dockerfile ../quarkus/target
+# time docker build -t jc-maintain01-dont -f 01.01.DONT.Dockerfile ../quarkus/target
 
 FROM debian:stretch
 

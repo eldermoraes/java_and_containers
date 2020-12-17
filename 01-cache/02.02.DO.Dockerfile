@@ -1,4 +1,4 @@
-# docker build -t jc-cache02-do -f 02.02.DO.Dockerfile ../quarkus/target
+# time docker build -t jc-cache02-do -f 02.02.DO.Dockerfile ../quarkus/target
 
 FROM debian:stretch
 

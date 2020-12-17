@@ -1,4 +1,4 @@
-# docker build -t jc-cache03-dont -f 03.01.DONT.Dockerfile ../quarkus/target
+# time docker build -t jc-cache03-dont -f 03.01.DONT.Dockerfile ../quarkus/target
 
 FROM debian:stretch
 

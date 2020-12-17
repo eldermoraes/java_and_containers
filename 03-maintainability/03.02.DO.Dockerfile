@@ -1,4 +1,4 @@
-# docker build -t jc-maintain03-do -f 03.02.DO.Dockerfile ../quarkus/target
+# time docker build -t jc-maintain03-do -f 03.02.DO.Dockerfile ../quarkus/target
 
 FROM openjdk:8-jre-alpine
 

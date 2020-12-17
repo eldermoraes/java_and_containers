@@ -1,4 +1,4 @@
-# docker build -t jc-size01-do -f 01.02.DO.Dockerfile ../quarkus/target
+# time docker build -t jc-size01-do -f 01.02.DO.Dockerfile ../quarkus/target
 
 FROM debian:stretch
 
