@@ -1,9 +1,9 @@
-# time docker build -t jc-cache01-do -f 01.02.DO.Dockerfile ../quarkus/target
+# time podman build -t jc-cache01-do -f 01.02.DO.Dockerfile ../quarkus/target
 
-FROM debian:stretch
+FROM debian/buildd:stable
 
 RUN apt-get update
-RUN apt-get -y install openjdk-8-jdk ssh vim
+RUN apt -y install default-jdk
 
 COPY lib/* /deployment/lib/
 COPY *-runner.jar /deployment/
