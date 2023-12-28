@@ -6,6 +6,6 @@ COPY lib/* /deployment/lib/
 COPY *-runner.jar /deployment/
 
 RUN apt-get update
-RUN apt -y install default-jdk
+RUN apt -y install default-jdk ssh vim
 
 CMD ["java", "-jar", "/deployment/quarkus-1.0.0-SNAPSHOT-runner.jar"]

@@ -1,4 +1,4 @@
-# time docker build -t jc-maintain01-do -f 01.02.DO.Dockerfile ../quarkus/target
+# time podman build -t jc-maintain01-do -f 01.02.DO.Dockerfile ../quarkus/target
 
 FROM openjdk
 

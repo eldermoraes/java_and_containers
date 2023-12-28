@@ -1,11 +1,10 @@
-# time docker build -t jc-size02-do -f 02.02.DO.Dockerfile ../quarkus/target
+# time podman build -t jc-size02-do -f 02.02.DO.Dockerfile ../quarkus/target
 
-FROM debian:stretch
+FROM debian/buildd:stable
 
-RUN apt-get update \
- && apt-get -y install --no-install-recommends\
-    openjdk-8-jdk \
- && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && \
+    apt -y install --no-install-recommends && \
+    rm -rf /var/lib/apt/lists/*
 
 COPY lib/* /deployment/lib/
 COPY quarkus-1.0.0-SNAPSHOT-runner.jar /deployment/app.jar
